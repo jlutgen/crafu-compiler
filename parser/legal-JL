@@ -1,0 +1,18 @@
+class Program {
+	
+	int g;
+	int b[20];
+	        
+    int f(int n, boolean qq) {
+    	boolean x;
+    	boolean y;
+    	
+    	y = 5 == 9;
+    	x = false;
+ 
+    }
+    
+    void main() {
+  		//f(true, 20);
+    }
+ }

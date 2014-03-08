@@ -1,0 +1,17 @@
+Buildfile: /home/jlutgen/Desktop/mit-ocw-6.035-compilers/skeleton/build.xml
+Trying to override old definition of task javac
+
+init:
+
+scanner:
+
+parser:
+
+compile:
+    [javac] Compiling 4 source files to /home/jlutgen/Desktop/mit-ocw-6.035-compilers/skeleton/classes
+    [javac] /home/jlutgen/Desktop/mit-ocw-6.035-compilers/skeleton/java/decaf/DecafParser.java:22: package decaf.IR does not exist
+    [javac]     import decaf.IR.*;
+    [javac]     ^
+    [javac] Note: /home/jlutgen/Desktop/mit-ocw-6.035-compilers/skeleton/java/decaf/DecafScanner.java uses unchecked or unsafe operations.
+    [javac] Note: Recompile with -Xlint:unchecked for details.
+    [javac] 1 error

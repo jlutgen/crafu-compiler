@@ -1,0 +1,9 @@
+// OK
+class Program {
+  int x;
+  void main() {
+   x = -2147483648;
+   //x = ---0x7fffffff;
+   
+  }
+}

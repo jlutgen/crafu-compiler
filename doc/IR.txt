@@ -1,0 +1,62 @@
+abstract class Ir
+abstract class 	IrExpression
+abstract class		IrLiteral
+         class			IrIntLiteral
+         class			IrCharLiteral
+         class			IrBooleanLiteral
+abstract class		IrCallExpr
+         class			IrMethodCallExpr
+         class			IrCalloutExpr
+         class		IrBinopExpr
+         class		IrNotExpr
+         class		IrNegativeExpr
+abstract class		IrLocationExpr
+         class			IrSimpleLocation
+         class			IrArrayLocation
+abstract class	IrStatement
+         class		IrAssignStmt
+         class		IrPlusAssignStmt
+         class		IrMinusAssignStmt
+         class		IrBreakStmt
+         class		IrIfStmt
+         class		IrForStmt
+         class		IrReturnStmt
+         class		IrContinueStmt
+         class		IrInvokeStmt
+         class		IrBlock
+         class	IrClassDecl
+abstract class	IrMemberDecl
+         class		IrMethodDecl
+         class		IrFieldDecl
+         class	IrVarDecl
+         class	IrType
+	 class 	IrID
+abstract class 	IrField
+         class 		IrSimpleField
+         class 		IrArrayField    
+abstract class 	IrCalloutArg
+         class 		IrExprCalloutArg
+         class 		IrStringCalloutArg
+
+
+
+
+
+symbol table
+An id is bound to 
+	1) an integer value (type: integer, value 7)
+	2) a boolean value (type: boolean, value true)
+	3) an array of integers (type: int array, size: 4, value: [3, 4, 9, 8])
+	4) an array of booleans (type: boolean array, size: 3, value: [true, false, false])
+	5) a method (type: method, signature: MethodSignature)
+
+class MethodSignature:
+	returnType(): void/int/boolean
+	argTypes(): List<IrType>
+
+abstract class SymbolTableEntry
+         class 	IntEntry
+         class	BoolEntry
+         class	IntArrayEntry
+	 class	BoolArrayEntry
+         class	MethodEntry
